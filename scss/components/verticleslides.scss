@@ -1,0 +1,127 @@
+
+#all-pages {
+  position: relative;
+  top: 0;
+  transition: all 800ms ease;
+  /* height set by js */
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+}
+
+#all-pages .page:nth-child(1) {
+  background-color: #ededed;
+}
+
+#all-pages .page:nth-child(2) {
+  background-color: #ededed;
+}
+
+#all-pages .page:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url(../media/img/moodshots/touring/on-the-road-2.jpg) left bottom / cover;
+}
+
+#all-pages .page:nth-child(4) {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url(../media/img/moodshots/touring/on-the-track-1-grad.jpg) right bottom / cover;
+}
+
+#all-pages .page:nth-child(5) {
+  background-color: #ededed;
+}
+
+.text-container {
+  color: white;
+  position: relative;
+  top: 50%;
+  margin: 0 40px;
+  opacity: 0;
+  visibility: visible;
+  transform: translateY(-50%);
+  transition: all 3s ease;
+
+  &.in-sight {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  h2 {
+    text-transform: uppercase;
+  }
+}
+
+.nav-dot-container {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 100;
+
+  .nav-dot {
+    width: 20px;
+    height: 30px;
+    padding: 20px 0;
+    margin: auto;
+
+    span {
+      display: block;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #27a1c3;
+      transition: all 200ms ease;
+      margin: auto;
+
+      &:hover {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    &.dot-active {
+      span {
+        width: 22px;
+        height: 22px;
+        background: #11beef;
+      }
+    }
+  }
+}
+
+
+#all-pages-1 {
+  position: relative;
+  top: 0;
+  transition: all 800ms ease;
+  /* height set by js */
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+}
+
+#all-pages-1 .page:nth-child(1) {
+  background-color: #ededed;
+}
+
+#all-pages-1 .page:nth-child(2) {
+  background-color: #ededed;
+}
+
+#all-pages-1 .page:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url(../media/img/moodshots/racecar/racetrack_blue.jpg) center / cover;
+}
+
+#all-pages-1 .page:nth-child(4) {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url(../media/img/moodshots/racecar/racetrack_yellow.jpg) bottom right / cover;
+}
+
+#all-pages-1 .page:nth-child(5) {
+  background-color: #ededed;
+}

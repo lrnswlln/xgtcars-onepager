@@ -1,0 +1,36 @@
+.slide {
+  position: relative; /* Wichtig, um die Positionierung des Captions zu ermöglichen */
+}
+
+.slider-img {
+  height: calc(100vh - 152px);
+  object-fit: contain;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: -30px; /* Abstand vom oberen Rand des Containers */
+  left: 36%; /* Zentriert das Caption horizontal */
+  transform: translateX(-50%); /* Korrigiert die horizontale Zentrierung */
+  padding: 10px; /* Optional: Innenabstand für das Caption */
+  opacity: 0.3; /* Anfangszustand: unsichtbar */
+  transition: opacity 0.9s ease-in-out, top 0.4s ease-in-out; /* Übergänge für Opazität und Position */
+}
+
+.carousel-item.active .carousel-caption {
+  opacity: 1; /* Sichtbar, wenn aktiv */
+  top: 20vh; /* Position, wenn aktiv */
+}
+
+
+/* Zusätzliche Stile für die verschachtelte Struktur */
+.container-fluid .carousel-item .container .slides .slide .carousel-caption {
+  top: 100px; /* Anpassung für die verschachtelte Struktur */
+  transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
+}
+
+/* Optional: Zusätzliche Animation beim Ausblenden */
+.carousel-item:not(.active) .carousel-caption {
+  opacity: 0;
+  top: 50px; /* Verschiebt das Caption nach oben beim Ausblenden */
+}

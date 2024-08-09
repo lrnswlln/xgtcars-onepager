@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <script defer src="assets/js/jquery.min.js"></script>
+    <script defer src="assets/js/slick.min.js"></script>
+    <script defer src="assets/js/bootstrap.bundle.min.js"></script>
+    <script defer src="app.js"></script>
+
+    <title>GTX Cars</title>
+
+</head>
+<body>
+<div class="content">
+    <div class="carousel slide" data-bs-theme="dark" id="carouselExampleCaptions">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class='container-fluid'>
+
+                    <div id="all-pages">
+                        <section class="page">
+                            <div class="text-container">
+                                <div style="height: 100vh">
+                                    <nav class="navbar navbar-expand text-dark">
+                                        <div class="container py-5 d-flex justify-content-around">
+                                            <div class="navbar-nav">
+                                                <ul class="d-flex flex-wrap justify-content-center list-unstyled">
+                                                    <li>
+                                                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                                            <a class="nav-link p text-dark px-2 px-md-4 text-decoration-none">GT3 Touring</a>
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+                                                            <a class="nav-link p text-dark px-2 px-md-4 text-decoration-none">GT3 Track</a>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <div class="container">
+                                        <div class="carousel-caption text-dark">
+                                            <h1>GT3 Touring</h1>
+                                            <img class="hero-slider-img" src="assets/media/svg/XGT.svg">
+                                        </div>
+                                        <div class="btn-learn-more px-4 position-absolute">
+                                            <button class="learn-more" id="scroll-button" onclick="scrollToAnchor('slider')">
+                                    <span aria-hidden="true" class="circle">
+                                            <span class="icon arrow"></span>
+                                    </span>
+                                                <span class="button-text">Learn More</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <img alt="Car Blue" class="slider-img d-block w-100"
+                                         src="assets/media/img/product/touring/sport_car_blue.jpg">
+                                </div>
+                            </div>
+                        </section>
+                        <section class="page">
+                            <div class="text-container">
+                                <div class="container px-0 px-md-5">
+                                    <div class="row">
+                                        <!-- Farbboxen -->
+                                        <div class="text-container-text text-container-text-up col-xl-4 col-lg-6">
+                                            <img src="assets/media/svg/XGT.svg" class="card-img-top w-50 mb-5" alt="XGTLOGO">
+                                            <h3 class="mb-3 text-dark text-uppercase">Ihre Vision, Ihr Fahrzeug</h3>
+                                            <p class="text-dark">Wählen Sie aus einer exklusiven Palette von Farben, die Ihren Sportwagen nicht nur in Szene setzen, sondern auch Ihre Persönlichkeit unterstreichen.</p>
+                                        </div>
+
+                                        <!-- Bildbereich -->
+                                        <div class="col-xl-8 col-lg-6">
+                                            <div class="image-container position-relative">
+                                                <img id="car-image" src="assets/media/img/product/touring/sport_car_red.jpg" alt="Auto" class="img-fluid fade-in show">
+                                            </div>
+                                            <div class="d-flex w-100" style="z-index: 100000">
+                                                <div class="color-box red mx-1 mx-md-4 w-25" data-color="red"></div>
+                                                <div class="color-box black mx-1 mx-md-4 w-25" data-color="black"></div>
+                                                <div class="color-box blue mx-1 mx-md-4 w-25" data-color="blue"></div>
+                                                <div class="color-box grey mx-1 mx-md-4 w-25" data-color="grey"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                        <section class="page">
+                            <div class="text-container" style="top: 30vh">
+                                <div class="text-container-text text-container-text-right container d-flex justify-content-end">
+                                    <div>
+                                        <h2>Geboren, um zu <br>dominieren</h2>
+                                        <p>Entdecken Sie die unbändige Kraft dieses Sportwagens auf jeder Straße.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="page">
+                            <div class="text-container" style="top: 70vh;">
+                                <div class="text-container-text text-container-text-left container">
+                                    <h2>Das Herz eines <br>Rennwagens</h2>
+                                    <p>Ein Auto, das die Rennstrecke im Blut hat</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="page">
+                            <div class="text-container">
+                                <div class="container d-flex align-items-center" style="height: calc(100vh - 104px);">
+                                    <div class="row">
+                                        <div class="col-lg-8 text-container-text text-container-text-left container">
+                                            <h4 class="text-dark fw-light">Ungebändigte Power:</h4>
+                                            <h2 class="text-dark mb-3">Entfesseln Sie das pure Adrenalin</h2>
+                                            <p class="text-dark mb-2">Erleben Sie die atemberaubende Beschleunigung dieses Sportwagens. Mit einem V8 Sauger und <b>743 PS</b> katapultieren Sie sich in wenigen Sekunden von 0 auf 100 km/h.</p>
+                                            <div class="icon-text mb-4">
+                                                <div class="icon-text-item d-flex mb-2">
+                                                    <i class="bi bi-speedometer2 fs-4 text-dark">
+                                                        <span class="p px-3 fw-light"> 2,8s 0-100 km/h</span>
+                                                    </i>
+                                                </div>
+                                                <div class="icon-text-item d-flex mb-2">
+                                                    <i class="bi bi-gear-wide-connected fs-4 text-dark">
+                                                        <span class="p px-3 fw-light"> 600 PS (441 kW) bei 7.000 U/min</span>
+                                                    </i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 text-container-text text-container-text-up container d-flex justify-content-md-end justify-content-start mt-md-0 mt-5 align-items-center">
+                                                <img src="assets/media/svg/XGT.svg" class="card-img-top w-50 " alt="XGTLOGO">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-around">
+                                            <img src="assets/media/img/product/touring/red_car_slim.jpg" class="img-bottom-slim card-img-top" alt="XGTLOGO">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <nav class="footer text-dark">
+                                    <div class="container py-1 d-flex justify-content-center">
+
+                                            <a href="https://bylaurin.de/datenschutz/" target="_blank" class="nav-link text-dark px-4">Datenschutz</a>
+                                            <a href="https://bylaurin.de/impressum/" target="_blank" class="nav-link text-dark px-4">Impressum</a>
+
+                                    </div>
+                                    <div class="container mb-3 d-flex justify-content-around">
+                                        <div class="navbar-nav">
+                                            <p class="text-dark px-4 text-center">Demo-Website by Laurin Sawellion</p>
+                                        </div>
+                                    </div>
+                                </nav>
+
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class='container-fluid'>
+
+                    <div id="all-pages-1">
+                        <section class="page">
+                            <div class="text-container">
+                                <div style="height: 100vh">
+                                    <nav class="navbar navbar-expand text-dark">
+                                        <div class="container py-5 d-flex justify-content-around">
+                                            <div class="navbar-nav">
+                                                <ul class="d-flex flex-wrap justify-content-center list-unstyled">
+                                                    <li>
+                                                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
+                                                            <a class="nav-link text-dark px-2 px-md-4 text-decoration-none">GT3 Touring</a>
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="active" aria-label="Slide 2">
+                                                            <a class="nav-link text-dark px-2 px-md-4 text-decoration-none">GT3 Track</a>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <div class="container">
+                                        <div class="carousel-caption text-dark">
+                                            <h1>GT3 Track</h1>
+                                            <img class="hero-slider-img" src="assets/media/svg/XGT.svg">
+                                        </div>
+                                        <div class="btn-learn-more px-4 position-absolute">
+                                            <button class="learn-more" id="scroll-button-1" onclick="scrollToAnchor('slider')">
+                                    <span aria-hidden="true" class="circle">
+                                            <span class="icon arrow"></span>
+                                    </span>
+                                                <span class="button-text">Learn More</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <img alt="..." class="slider-img d-block w-100"
+                                         src="assets/media/img/product/racecar/car_rs_yellow.jpg">
+                                </div>
+                            </div>
+                        </section>
+                        <section class="page">
+                            <div class="text-container">
+                                <div class="container px-0 px-md-5">
+                                    <div class="row">
+                                        <!-- Farbboxen -->
+                                        <div class="text-container-text text-container-text-up col-xl-4 col-lg-6">
+                                            <img src="assets/media/svg/XGT.svg" class="card-img-top w-50 mb-5" alt="XGTLOGO">
+                                            <h3 class="mb-3 text-dark text-uppercase">Ihre Vision, Ihr Rennwagen</h3>
+                                            <p class="text-dark">Wählen Sie aus einer exklusiven Palette von grellen Farben, die Ihren Sportwagen nicht nur in Szene setzen, sondern auch Ihre Persönlichkeit unterstreichen.</p>
+                                        </div>
+
+                                        <!-- Bildbereich -->
+                                        <div class="col-xl-8 col-lg-6">
+                                            <div class="image-container position-relative">
+                                                <img id="car-image-1" src="assets/media/img/product/racecar/car_rs_yellow.jpg" alt="Auto" class="img-fluid fade-in show">
+                                            </div>
+                                            <div class="d-flex w-100" style="z-index: 100000">
+                                                <div class="color-box red mx-1 mx-md-4 w-25" data-color="red"></div>
+                                                <div class="color-box pink mx-1 mx-md-4 w-25" data-color="pink"></div>
+                                                <div class="color-box green mx-1 mx-md-4 w-25" data-color="green"></div>
+                                                <div class="color-box yellow mx-1 mx-md-4 w-25" data-color="yellow"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                        <section class="page">
+                            <div class="text-container" style="top: 30vh">
+                                <div class="text-container-text text-container-text-right container d-flex justify-content-end">
+                                    <div>
+                                        <h2>Geboren, um zu <br>dominieren</h2>
+                                        <p>Entdecken Sie die unbändige Kraft dieses Sportwagens auf jeder Straße.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="page">
+                            <div class="text-container" style="top: 60vh;">
+                                <div class="text-container-text text-container-text-left container">
+                                    <h2>Das Herz eines <br>Rennwagens</h2>
+                                    <p>Ein Auto, das die Rennstrecke im Blut hat</p>
+                                    <img src="assets/media/svg/nring.svg" class="mt-5 w-50 " style="max-width: 150px;" alt="N-Ring Logo">
+                                </div>
+                            </div>
+                        </section>
+                        <section class="page">
+                            <div class="text-container">
+                                <div class="container d-flex align-items-center" style="height: calc(100vh - 104px);">
+                                    <div class="row">
+                                        <div class="col-lg-8 text-container-text text-container-text-left container">
+                                            <h4 class="text-dark fw-light">Ungebändigte Power:</h4>
+                                            <h2 class="text-dark mb-3">Entfesseln Sie das pure Adrenalin</h2>
+                                            <p class="text-dark mb-2">Erleben Sie die atemberaubende Beschleunigung dieses Sportwagens. Mit einem V8 Sauger und <b>743 PS</b> katapultieren Sie sich in wenigen Sekunden von 0 auf 100 km/h.</p>
+                                            <div class="icon-text mb-4">
+                                                <div class="icon-text-item d-flex mb-2">
+                                                    <i class="bi bi-speedometer2 fs-4 text-dark">
+                                                        <span class="p px-3 fw-light"> 2,8s 0-100 km/h</span>
+                                                    </i>
+                                                </div>
+                                                <div class="icon-text-item d-flex mb-2">
+                                                    <i class="bi bi-gear-wide-connected fs-4 text-dark">
+                                                        <span class="p px-3 fw-light"> 600 PS (441 kW) bei 7.000 U/min</span>
+                                                    </i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 text-container-text text-container-text-up container d-flex justify-content-md-end justify-content-start mt-md-0 mt-5 align-items-center">
+                                            <img src="assets/media/svg/XGT.svg" class="card-img-top w-50 " alt="XGTLOGO">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-around">
+                                            <img src="assets/media/img/product/racecar/car_green_slim.jpg" class="img-bottom-slim card-img-top" alt="Car Green">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <nav class="footer text-dark">
+                                    <div class="container py-1 d-flex justify-content-center">
+
+                                        <a href="https://bylaurin.de/datenschutz/" target="_blank" class="nav-link text-dark px-4">Datenschutz</a>
+                                        <a href="https://bylaurin.de/impressum/" target="_blank" class="nav-link text-dark px-4">Impressum</a>
+
+                                    </div>
+                                    <div class="container mb-3 d-flex justify-content-around">
+                                        <div class="navbar-nav">
+                                            <p class="text-dark px-4 text-center">Demo-Website by Laurin Sawellion</p>
+                                        </div>
+                                    </div>
+                                </nav>
+
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <button id="scroll-to-first-1" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions"
+                type="button">
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button id="scroll-to-first-2" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions"
+                type="button">
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+</div>
+
+
+
+
+</body>
+</html>

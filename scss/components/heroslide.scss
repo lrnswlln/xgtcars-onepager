@@ -1,0 +1,15 @@
+.hero-slider-img {
+  width: 450px;
+}
+
+
+@include media-breakpoint-down(md) {
+  .carousel-caption {
+    width: 80vw;
+    left: 50vw;
+
+    .hero-slider-img {
+      width: 80%;
+    }
+  }
+}

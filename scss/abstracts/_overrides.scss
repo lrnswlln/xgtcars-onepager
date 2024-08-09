@@ -1,0 +1,14 @@
+$bootstrap-icons-font-dir: "../fonts" !default;
+
+.carousel-control-prev, .carousel-control-next {
+  height: 80vh;
+  align-items: end !important;
+}
+
+.carousel-caption {
+  text-align: start !important;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}

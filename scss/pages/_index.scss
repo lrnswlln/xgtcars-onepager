@@ -1,0 +1,40 @@
+body {
+  background-color: #ededed;
+}
+
+.img-bg {
+  background-image: linear-gradient(rgb(35 35 35 / 46%), rgba(61, 61, 61, 0.57)), url(../media/img/default_bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  min-height: 100vh;
+
+  .btn-search {
+    top: 10px;
+    right: 10px;
+  }
+
+  &-box {
+    max-width: 1024px;
+
+    .blurry-bg {
+      background: rgb(184 184 184 / 52%);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0,0,0,.1);
+      backdrop-filter: blur(5.8px);
+    }
+  }
+  .forcast-hr-element {
+    background: rgb(89 80 80 / 37%);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .sun-circle {
+    width: 50vw;
+  }
+}
+
+

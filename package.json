@@ -1,0 +1,28 @@
+{
+  "name": "fancy-cars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx p  rettier --write scss/",
+    "watch": "watch 'npm run css' ./scss",
+    "build": "npm-run-all copy:bootstrap css:compile",
+    "copy:bootstrap": "cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.* public/assets/js/",
+    "copy:bootstrap-icon": "cp node_modules/bootstrap-icons/font/fonts/bootstrap-icons.* public/assets/fonts/",
+    "css:compile": "sass --load-path=node_modules --style=compressed --embed-source-map ./scss/main.scss ./public/assets/css/main.css",
+    "css:prefix": "postcss --replace assets/css/main.css --use autoprefixer --map",
+    "css": "npm-run-all css:compile css:prefix"
+  },
+  "author": "Laurin Sawellion",
+  "devDependencies": {
+    "@types/jquery": "^3.5.30",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.77.8",
+    "watch": "^0.13.0"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}

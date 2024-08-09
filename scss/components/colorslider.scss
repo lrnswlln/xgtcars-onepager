@@ -1,0 +1,123 @@
+// Allgemeine Stilregeln für die Farbboxen
+.color-box {
+
+  height: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 2px solid transparent; // Start mit transparenter Umrandung
+  border-radius: 16px;
+  transition: transform 0.2s ease, border-color 0.3s ease; // Kurze Transition für Vergrößern und Umrandung
+
+  // Farben für die Farbboxen
+  &.red {
+    background-color: #dd3737;
+  }
+
+  &.black {
+    background-color: #232323;
+  }
+
+  &.blue {
+    background-color: #28a0c3;
+  }
+
+  &.grey {
+    background-color: #99a19e;
+  }
+
+  &.green {
+    background-color: #20933b;
+  }
+
+  &.pink {
+    background-color: #cd458e;
+  }
+
+  &.yellow {
+    background-color: #e6c512;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  // Stil für die ausgewählte Farbbox
+  &.selected {
+    border-color: #c5c5c5; // Farbe der Umrandung, wenn ausgewählt
+  }
+}
+
+// Stilregeln für den Bildcontainer
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+}
+
+// Stilregeln für das Bild mit Fade-Effekt
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+
+  &.show {
+    opacity: 1;
+  }
+}
+
+
+
+.text-container {
+  .text-container-text {
+    opacity: 0; // Anfangszustand unsichtbar
+    transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+
+    &-up {
+      transform: translateY(-200px); // Anfangsposition: oben
+      transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+    }
+
+    &-left {
+      transform: translateX(-400px); // Anfangsposition: links
+      transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+    }
+
+    &-right {
+      transform: translateX(400px); // Anfangsposition: rechts
+      transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+    }
+  }
+
+  &.in-sight {
+    .text-container-text {
+      opacity: 1; // Sichtbar, wenn der Text-Container die in-sight Klasse hat
+      transform: translate(0); // Endposition, wenn sichtbar
+    }
+
+    .text-container-text-up {
+      transform: translateY(0); // Endposition: von oben ins Bild fliegen
+    }
+
+    .text-container-text-left {
+      transform: translateX(0); // Endposition: von links ins Bild fliegen
+    }
+
+    .text-container-text-right {
+      transform: translateX(0); // Endposition: von rechts ins Bild fliegen
+    }
+  }
+}
+
+
+.img-bottom-slim {
+  width: 50%;
+}
+
+@include media-breakpoint-down(lg) {
+  .img-bottom-slim {
+    width: 100%;
+  }
+}
+
+
+
