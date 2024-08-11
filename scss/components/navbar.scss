@@ -1,6 +1,14 @@
 .navbar-nav {
   li {
     margin: 0 2rem;
+
+    .nav-btn {
+      background-color: #ededed;
+
+      .mix-blend {
+        mix-blend-mode: difference;
+      }
+    }
   }
 
   a {
